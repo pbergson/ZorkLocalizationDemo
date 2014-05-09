@@ -10,6 +10,13 @@
 
 @interface PBViewController ()
 
+@property (strong, nonatomic) IBOutlet UILabel *firstLabel;
+@property (strong, nonatomic) IBOutlet UILabel *secondLabel;
+@property (strong, nonatomic) IBOutlet UILabel *thirdLabel;
+@property (strong, nonatomic) IBOutlet UILabel *fourthLabel;
+
+-(void)configureLabels;
+
 @end
 
 @implementation PBViewController
@@ -17,13 +24,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    [self configureLabels];
 }
 
-- (void)didReceiveMemoryWarning
+-(void)configureLabels
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [self.firstLabel setText:NSLocalizedString(@"West of House", @"opening line")];
+    [self.secondLabel setText:NSLocalizedString(@"You are standing in an open field west of a white house,", @"second line")];
+    [self.thirdLabel setText:NSLocalizedString(@"with a boarded front door", @"second line continued")];
+    [self.fourthLabel setText:NSLocalizedString(@"There is a mailbox here.",@"third line")];
 }
+
+
 
 @end
