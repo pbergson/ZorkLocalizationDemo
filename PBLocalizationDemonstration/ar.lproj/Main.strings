@@ -1,24 +1,12 @@
 
-/* Class = "IBUILabel"; text = "Label"; ObjectID = "HG2-YD-Ljn"; */
-"HG2-YD-Ljn.text" = "Label";
-
 /* Class = "IBUIButton"; normalTitle = "Open Door"; ObjectID = "Jxb-Z8-2bI"; */
-"Jxb-Z8-2bI.normalTitle" = "Open Door";
-
-/* Class = "IBUILabel"; text = "Label"; ObjectID = "LV2-2e-6Im"; */
-"LV2-2e-6Im.text" = "Label";
-
-/* Class = "IBUILabel"; text = "Label"; ObjectID = "OnX-aY-Vjg"; */
-"OnX-aY-Vjg.text" = "Label";
+"Jxb-Z8-2bI.normalTitle" = "فتح الباب";
 
 /* Class = "IBUIButton"; normalTitle = "Open Mailbox"; ObjectID = "YqJ-3G-XhG"; */
-"YqJ-3G-XhG.normalTitle" = "Open Mailbox";
-
-/* Class = "IBUILabel"; text = "Label"; ObjectID = "bLB-s6-0H7"; */
-"bLB-s6-0H7.text" = "Label";
+"YqJ-3G-XhG.normalTitle" = "قتح صندوق البريد";
 
 /* Class = "IBUIButton"; normalTitle = "Take Mailbox"; ObjectID = "eBk-dr-Gsl"; */
-"eBk-dr-Gsl.normalTitle" = "Take Mailbox";
+"eBk-dr-Gsl.normalTitle" = "التقاط صندوق البريد";
 
 /* Class = "IBUIButton"; normalTitle = "East"; ObjectID = "yna-mc-mJp"; */
-"yna-mc-mJp.normalTitle" = "East";
+"yna-mc-mJp.normalTitle" = "الشرق";
