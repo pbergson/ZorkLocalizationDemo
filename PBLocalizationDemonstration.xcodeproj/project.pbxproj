@@ -22,6 +22,7 @@
 		18FDFF36191C632500444D39 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18FDFF34191C632500444D39 /* InfoPlist.strings */; };
 		18FDFF38191C632500444D39 /* PBLocalizationDemonstrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FDFF37191C632500444D39 /* PBLocalizationDemonstrationTests.m */; };
 		18FDFF43191C656C00444D39 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18FDFF41191C656C00444D39 /* Localizable.strings */; };
+		18FDFF5E191D839000444D39 /* GrueView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FDFF5D191D839000444D39 /* GrueView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		18FDFF58191D820A00444D39 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
 		18FDFF5A191D820B00444D39 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		18FDFF5C191D820B00444D39 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		18FDFF5D191D839000444D39 /* GrueView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GrueView.xib; path = ../GrueView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 		18FDFF12191C632500444D39 /* PBLocalizationDemonstration */ = {
 			isa = PBXGroup;
 			children = (
+				18FDFF5D191D839000444D39 /* GrueView.xib */,
 				18FDFF1B191C632500444D39 /* PBAppDelegate.h */,
 				18FDFF1C191C632500444D39 /* PBAppDelegate.m */,
 				18FDFF1E191C632500444D39 /* Main.storyboard */,
@@ -245,6 +248,7 @@
 				18FDFF43191C656C00444D39 /* Localizable.strings in Resources */,
 				18FDFF17191C632500444D39 /* InfoPlist.strings in Resources */,
 				18FDFF20191C632500444D39 /* Main.storyboard in Resources */,
+				18FDFF5E191D839000444D39 /* GrueView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
