@@ -41,16 +41,64 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yna-mc-mJp">
+                                <rect key="frame" x="60" y="419" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2Ry-fW-JeM"/>
+                                </constraints>
+                                <state key="normal" title="East">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBk-dr-Gsl">
+                                <rect key="frame" x="170" y="419" width="90" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="SvP-Dx-XZx"/>
+                                </constraints>
+                                <state key="normal" title="Take Mailbox">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jxb-Z8-2bI">
+                                <rect key="frame" x="60" y="488" width="75" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FOd-LZ-tKe"/>
+                                </constraints>
+                                <state key="normal" title="Open Door">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YqJ-3G-XhG">
+                                <rect key="frame" x="164" y="488" width="96" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="euB-ZS-KbL"/>
+                                </constraints>
+                                <state key="normal" title="Open Mailbox">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="HG2-YD-Ljn" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="40" id="25Q-Bf-Zov"/>
+                            <constraint firstItem="yna-mc-mJp" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="60" id="Aha-iF-Ohx"/>
+                            <constraint firstItem="Jxb-Z8-2bI" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="60" id="DRe-TQ-RUA"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Jxb-Z8-2bI" secondAttribute="bottom" constant="50" id="ETF-gf-8cq"/>
+                            <constraint firstAttribute="trailing" secondItem="eBk-dr-Gsl" secondAttribute="trailing" constant="60" id="Gdw-Ep-SMS"/>
                             <constraint firstAttribute="trailing" secondItem="OnX-aY-Vjg" secondAttribute="trailing" constant="27" id="Gin-Q3-zJg"/>
+                            <constraint firstItem="YqJ-3G-XhG" firstAttribute="top" secondItem="eBk-dr-Gsl" secondAttribute="bottom" constant="39" id="O86-SV-aOv"/>
                             <constraint firstItem="OnX-aY-Vjg" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="56" id="Zt5-v4-bsI"/>
                             <constraint firstItem="HG2-YD-Ljn" firstAttribute="top" secondItem="LV2-2e-6Im" secondAttribute="bottom" constant="15" id="Zzu-Qa-bSn"/>
                             <constraint firstAttribute="trailing" secondItem="LV2-2e-6Im" secondAttribute="trailing" constant="27" id="bEp-yh-cbz"/>
+                            <constraint firstItem="Jxb-Z8-2bI" firstAttribute="top" secondItem="yna-mc-mJp" secondAttribute="bottom" constant="39" id="eMU-1S-saV"/>
+                            <constraint firstAttribute="trailing" secondItem="YqJ-3G-XhG" secondAttribute="trailing" constant="60" id="ek1-xj-R0t"/>
                             <constraint firstItem="bLB-s6-0H7" firstAttribute="top" secondItem="HG2-YD-Ljn" secondAttribute="bottom" constant="17" id="fY4-Hn-g8j"/>
                             <constraint firstItem="LV2-2e-6Im" firstAttribute="top" secondItem="OnX-aY-Vjg" secondAttribute="bottom" constant="17" id="fp6-a9-438"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="YqJ-3G-XhG" secondAttribute="bottom" constant="50" id="hZs-fG-bCX"/>
                             <constraint firstAttribute="trailing" secondItem="HG2-YD-Ljn" secondAttribute="trailing" constant="27" id="n7y-Qh-TDE"/>
                             <constraint firstAttribute="trailing" secondItem="bLB-s6-0H7" secondAttribute="trailing" constant="27" id="neA-Vu-l9D"/>
                             <constraint firstItem="bLB-s6-0H7" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="40" id="rsl-F3-eDg"/>
