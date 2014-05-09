@@ -55,6 +55,9 @@
 		18FDFF35191C632500444D39 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		18FDFF37191C632500444D39 /* PBLocalizationDemonstrationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBLocalizationDemonstrationTests.m; sourceTree = "<group>"; };
 		18FDFF42191C656C00444D39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = PBLocalizationDemonstration/Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		18FDFF46191C65F900444D39 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		18FDFF47191C661000444D39 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		18FDFF48191C661900444D39 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +218,9 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
+				"zh-Hans",
+				ar,
 			);
 			mainGroup = 18FDFF00191C632500444D39;
 			productRefGroup = 18FDFF0A191C632500444D39 /* Products */;
@@ -307,6 +313,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				18FDFF42191C656C00444D39 /* Base */,
+				18FDFF46191C65F900444D39 /* fr */,
+				18FDFF47191C661000444D39 /* zh-Hans */,
+				18FDFF48191C661900444D39 /* ar */,
 			);
 			name = Localizable.strings;
 			path = ..;
@@ -470,6 +479,7 @@
 				18FDFF3D191C632500444D39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18FDFF3E191C632500444D39 /* Build configuration list for PBXNativeTarget "PBLocalizationDemonstrationTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +488,7 @@
 				18FDFF40191C632500444D39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
