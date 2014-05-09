@@ -21,6 +21,7 @@
 		18FDFF2E191C632500444D39 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FDFF10191C632500444D39 /* UIKit.framework */; };
 		18FDFF36191C632500444D39 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18FDFF34191C632500444D39 /* InfoPlist.strings */; };
 		18FDFF38191C632500444D39 /* PBLocalizationDemonstrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FDFF37191C632500444D39 /* PBLocalizationDemonstrationTests.m */; };
+		18FDFF43191C656C00444D39 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18FDFF41191C656C00444D39 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		18FDFF33191C632500444D39 /* PBLocalizationDemonstrationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PBLocalizationDemonstrationTests-Info.plist"; sourceTree = "<group>"; };
 		18FDFF35191C632500444D39 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		18FDFF37191C632500444D39 /* PBLocalizationDemonstrationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PBLocalizationDemonstrationTests.m; sourceTree = "<group>"; };
+		18FDFF42191C656C00444D39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = PBLocalizationDemonstration/Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				18FDFF21191C632500444D39 /* PBViewController.h */,
 				18FDFF22191C632500444D39 /* PBViewController.m */,
 				18FDFF24191C632500444D39 /* Images.xcassets */,
+				18FDFF41191C656C00444D39 /* Localizable.strings */,
 				18FDFF13191C632500444D39 /* Supporting Files */,
 			);
 			path = PBLocalizationDemonstration;
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18FDFF25191C632500444D39 /* Images.xcassets in Resources */,
+				18FDFF43191C656C00444D39 /* Localizable.strings in Resources */,
 				18FDFF17191C632500444D39 /* InfoPlist.strings in Resources */,
 				18FDFF20191C632500444D39 /* Main.storyboard in Resources */,
 			);
@@ -297,6 +301,15 @@
 				18FDFF35191C632500444D39 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		18FDFF41191C656C00444D39 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18FDFF42191C656C00444D39 /* Base */,
+			);
+			name = Localizable.strings;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
