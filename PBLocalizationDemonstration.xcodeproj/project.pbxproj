@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18381182191E88DE00337C35 /* egg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18381181191E88DE00337C35 /* egg.jpg */; };
 		18FDFF0D191C632500444D39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FDFF0C191C632500444D39 /* Foundation.framework */; };
 		18FDFF0F191C632500444D39 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FDFF0E191C632500444D39 /* CoreGraphics.framework */; };
 		18FDFF11191C632500444D39 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18FDFF10191C632500444D39 /* UIKit.framework */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18381181191E88DE00337C35 /* egg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = egg.jpg; path = ../../../Downloads/egg.jpg; sourceTree = "<group>"; };
 		18FDFF09191C632500444D39 /* PBLocalizationDemonstration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PBLocalizationDemonstration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FDFF0C191C632500444D39 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18FDFF0E191C632500444D39 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -135,6 +137,7 @@
 		18FDFF13191C632500444D39 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				18381181191E88DE00337C35 /* egg.jpg */,
 				18FDFF14191C632500444D39 /* PBLocalizationDemonstration-Info.plist */,
 				18FDFF15191C632500444D39 /* InfoPlist.strings */,
 				18FDFF18191C632500444D39 /* main.m */,
@@ -241,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18381182191E88DE00337C35 /* egg.jpg in Resources */,
 				18FDFF25191C632500444D39 /* Images.xcassets in Resources */,
 				18FDFF43191C656C00444D39 /* Localizable.strings in Resources */,
 				18FDFF17191C632500444D39 /* InfoPlist.strings in Resources */,
