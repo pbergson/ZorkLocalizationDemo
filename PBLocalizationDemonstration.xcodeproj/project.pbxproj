@@ -171,6 +171,7 @@
 				18FDFF05191C632500444D39 /* Sources */,
 				18FDFF06191C632500444D39 /* Frameworks */,
 				18FDFF07191C632500444D39 /* Resources */,
+				18381180191DBE7000337C35 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -257,6 +258,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18381180191DBE7000337C35 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n#\n# update_storyboard_strings.sh - automatically extract translatable strings from storyboards and update strings files\n# Based on http://forums.macrumors.com/showpost.php?p=16060008&postcount=4 by mikezang\n\nstoryboardExt=\".storyboard\"\nstringsExt=\".strings\"\nnewStringsExt=\".strings.new\"\noldStringsExt=\".strings.old\"\nlocaleDirExt=\".lproj\"\n\n# Find storyboard file full path inside project folder\nfor storyboardPath in `find . -name \"*$storyboardExt\" -print`\ndo\n# Get Base strings file full path\nbaseStringsPath=$(echo \"$storyboardPath\" | sed \"s/$storyboardExt/$stringsExt/\")\n\n# Create base strings file if it doesn't exist\nif ! [ -f $baseStringsPath ]; then\ntouch -r $storyboardPath $baseStringsPath\n# Make base strings file older than the storyboard file\ntouch -A -01 $baseStringsPath\nfi\n\n# Create strings file only when storyboard file newer\nif find $storyboardPath -prune -newer $baseStringsPath -print | grep -q .; then\n# Get storyboard file name and folder\nstoryboardFile=$(basename \"$storyboardPath\")\nstoryboardDir=$(dirname \"$storyboardPath\")\n\n# Get New Base strings file full path and strings file name\nnewBaseStringsPath=$(echo \"$storyboardPath\" | sed \"s/$storyboardExt/$newStringsExt/\")\nstringsFile=$(basename \"$baseStringsPath\")\nibtool --export-strings-file $newBaseStringsPath $storyboardPath\n\n# ibtool sometimes fails for unknown reasons with \"Interface Builder could not open\n# the document XXX because it does not exist.\"\n# (maybe because Xcode is writing to the file at the same time?)\n# In that case, abort the script.\nif [[ $? -ne 0 ]] ; then\necho \"Exiting due to ibtool error. Please run `killall -9 ibtoold` and try again.\"\nexit 1\nfi\n\n# Only run iconv if $newBaseStringsPath exists to avoid overwriting existing\nif [ -f $newBaseStringsPath ]; then\niconv -f UTF-16 -t UTF-8 $newBaseStringsPath > $baseStringsPath\nrm $newBaseStringsPath\nfi\n\n# Get all locale strings folder\nfor localeStringsDir in `find . -name \"*$localeDirExt\" -print`\ndo\n# Skip Base strings folder\nif [ $localeStringsDir != $storyboardDir ]; then\nlocaleStringsPath=$localeStringsDir/$stringsFile\n\n# Just copy base strings file on first time\nif [ ! -e $localeStringsPath ]; then\ncp $baseStringsPath $localeStringsPath\nelse\noldLocaleStringsPath=$(echo \"$localeStringsPath\" | sed \"s/$stringsExt/$oldStringsExt/\")\ncp $localeStringsPath $oldLocaleStringsPath\n\n# Merge baseStringsPath to localeStringsPath\nawk 'NR == FNR && /^\\/\\*/ {x=$0; getline; a[x]=$0; next} /^\\/\\*/ {x=$0; print; getline; $0=a[x]?a[x]:$0; printf $0\"\\n\\n\"}' $oldLocaleStringsPath $baseStringsPath > $localeStringsPath\n\nrm $oldLocaleStringsPath\nfi\nfi\ndone\nelse\necho \"$storyboardPath file not modified.\"\nfi\ndone";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		18FDFF05191C632500444D39 /* Sources */ = {
